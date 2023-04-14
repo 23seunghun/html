@@ -7,6 +7,44 @@
         <title>컴퓨터 공학부- 신승훈</title>
 
         <link rel="stylesheet" type="text/css" href="layout.css">
+
+        <style>
+            article{
+                width: 95%;
+                /* background-color: coral; */
+                margin-left: auto;
+                margin-right: auto;
+                /* padding: 20px 0px 20px 0px */
+                margin: 20px 0px 20px 0px;
+                padding: 20px;
+            }
+
+            #com1{
+                border: 10px solid black;
+                border-radius: 10px; /* 모서리 선 둥글게 */
+            }
+            #com2{
+                border: 3px dotted green; /* 선을 점으로  */
+                border-radius: 20px;
+            }
+            #com3{
+                border: 3px double orange; /* 선 두개로*/
+                border-top-left-radius: 30px ;
+                border-bottom-right-radius: 30px; /* 대각선 2개 모서리만 둥글게*/
+            }
+
+            .red_point {
+                color: red;
+                font-weight: bold;
+            }
+            li {
+                line-height: 30px; 
+            }
+            
+            
+
+
+        </style>
     </head>
     <body>
         <!--로고,메뉴 영역-->
@@ -15,10 +53,10 @@
             <!--메뉴-->
             <nav>
                 <ul>
-                    <li><a href>학부소개</a></li>
-                    <li><a href>컴퓨터공학부</a></li>
-                    <li><a href>메타버스전공</a></li>
-                    <li><a href>교육목표</a></li>
+                    <li><a href="#com1">학부소개</a></li>
+                    <li><a href="#com2">컴퓨터공학부</a></li>
+                    <li><a href="#com3">메타버스전공</a></li>
+                    <li><a href="#com4">교육목표</a></li>
 
                 </ul>
             </nav>
@@ -27,7 +65,7 @@
         <!--학부 소개 메인 영역 -->
     <section>
         <!--학부 소개 콘텐츠 영역-->
-        <article>
+        <article id="com1">
             <h2>학부소개</h2>
             <p>
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -41,7 +79,7 @@
         </article>
 
         <!--컴퓨터공학전공 소개 콘텐츠 영역 -->
-        <article>
+        <article id="com2">
             <h2>컴퓨터공학전공</h2>
             <h3>소개</h3>
             <p>
@@ -51,35 +89,36 @@
             </p>
 
             <h3>교육 과정</h3>
-        <di>
+        <dl>
             <dt>1학년 1학기 ~ 2학년 학기 (4개 학기)</dt>
             <dd>컴퓨터구조, 자료구조, 컴퓨터통신, 가도록 등의 컴퓨터공학의 기초과목과 Python, C, C++, C#, Java 등 최소에서 요구하는 프로그래밍 언어를 껴안고 학습하면서 프로그래밍을 할 수 있습니다.</dd>
 
             <dt>3학년 1학기 ~ 4학년 2학기 (4개학기)</dt>
             <dd>현장의 완전한 기술과 집적된 IT 기술을 소프트웨어엔지니어링, IoT 프로그래밍, 클라우드 시스템 이해, 인공지능 등 핵심화 교과목을 통해 학습하고, 캡스톤디자인 교과목을 통해 완성된 프로젝트를 수행합니다.</dd>
-        </di>
+        </dl>
         </article>
 
            
         <!--메타버스전공 소개 콘텐츠 영역-->
-        <article>
+        <article id="com3">
             <h2>메타버스전공</h2>
             <p>
             프로그램 코딩 주제의 기본 교육과정과 지역버스 콘텐츠 제작 주제의 심화 교육과정을 통해
             <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요한
             생체비한 활력 인력을 양성하는 전공
             </p>
-            <di>
+            <dl>
                 <dt>1학기 1학기 ~ 2학기 2학기 (4개학기)</dt>
                 <dd>컴퓨터구조, 자료구조, 컴퓨터통신, 가도록 등의 컴퓨터공학의 기초과목과 Python, C, C++, C#, Java 등 최소에서 요구하는 프로그래밍 언어를 껴안고 학습하면서 프로그래밍을 할 수 있습니다.</dd>
 
                 <dt>3학년 1학기 ~ 4학년 2학기 (4개학기)</dt>
                 <dd>마을버스 플랫폼 구현 및 콘텐츠 제작 기술에 대해 VR엔진프로그래밍, 마을버스플랫폼이해와응용, 마을버스 콘텐츠제작, 3D게임프로그래밍, 블록체인 등 주요심화 교과목을 통해 배당하고, 캡스톤디자인 교과목을 통해 완성된 프로젝트를 합니다.</dd>
-            </di>                      
+            </dl>                      
         </article>
     
         <!--교육 목표 콘텐츠 영역-->
-        <article>
+        <article id="com4">
+            <h2>교육 목표</h2>
             <p>
                 <ul><li>아름다운 인격을 갖춘, 4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성한다.</li>
                     <ol>
