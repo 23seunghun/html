@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>블록 레벨 요소와 인라인 레벨 요소-신승훈</title>
+    </head>
+    <style>
+
+        /*컨텐츠 표기 알아보기*/
+        .content {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 30px;
+            border: 5px solid black;
+        }
+        /*이미지 블록 요소로 정리*/
+        #block img {
+            display: block;
+            margin: 10px;
+        }
+
+        /*메뉴(리스트)배치 방법*/
+        #list li {
+            background-color: orange;
+            margin: 10px;
+            width: 150px;
+            height: 50px;
+            /*기본이 block 요소이다. 가소,세로 길이 설정 가능*/
+        }
+        
+        #inline li {
+            background-color: red;
+            margin: 10px;
+            display: inline;
+            width: 150px;
+            height: 50px;
+            /*inline 요소는 가로 정렬이다. 가소 세로 길이설정 불가능*/
+        }
+
+        #inlineblock li {
+            background-color: pink;
+            margin: 10px;
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+             /*inlineblock 요소는 가로 정렬되고. 가소 세로 길이설정이 가능하다.*/
+        }
+
+        .overlap {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 30px;
+            border: 5px solid black;
+            display: inline-block;
+        }
+
+        .box1, .box2 {
+            width: 100px;
+            height: 150px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black
+        }
+
+        .box1 {
+            box-sizing: content-box;
+            /*가로 길이:300+10+10+5+5=330 */
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            /*가로 길이:*/
+        }
+    </style>
+    <body>
+        <h1>컨첸츠 크기</h1>
+        <div class="content" style="background-color: chartreuse;"></div>
+        <div class="content" style="background-color: blue;"></div>
+        <div class="content" style="background-color: red;"></div>
+        
+        <hr>
+
+        <h1>이미지:인라인 요소로 화면 배치</h1>
+        <div>
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <h1>이미지:블록 요소로 화면 배치</h1>
+        <div id="block">
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <hr>
+
+        <h1>메뉴(리스트)배치</h1>
+        <ul id="list">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육 목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인 배치</h1>
+        <ul id="inline">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육 목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인-블록배치</h1>
+        <ul id="inlineblock">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육 목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <hr>
+
+        <h1>컨텐츠 마진 중첩</h1>
+        <div class="content" style="background-color: blueviolet;"></div>
+        <div class="content" style="background-color: orange;"></div>
+        <div class="overlap" style="background-color: yellow;"></div>
+        <div class="overlap" style="background-color: aqua;"></div>
+        
+        <hr>
+        <h1>박스 사이즈 정하기</h1>
+        <div class="box1" style="background-color: greenyellow;">content-box</div>
+        <div class="box2" style="background-color: orange;">boredr-box</div>
+    </body>
+    </html>
