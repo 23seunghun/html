@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfrom 5-신승훈</title>
+
+    <style>
+        .origin {
+            width: 160px;
+            height: 249px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        
+        }
+
+        .skewx:hover {
+            -webkit-transform: skewx(30deg);
+            -ms-transform: skewx(30deg);
+            -moz-transform: skewx(30deg);
+            -o-transform: skewx(30deg);
+            transform: skewx(30deg); /* 20도 */
+        }
+
+        .skewy:hover {
+            -webkit-transform: skewy(15deg);
+            -ms-transform: skewy(15deg);
+            -moz-transform: skewy(15deg);
+            -o-transform: skewy(15deg);
+            transform: skewy(15deg); /* 20도 */
+        }
+
+
+        .skewxy:hover {
+            -webkit-transform: skew(-25deg, -15deg);
+            -ms-transform: skew(-25deg, -15deg);
+            -moz-transform: skew(-25deg, -15deg);
+            -o-transform: skew(-25deg, -15deg);
+            transform: skew(-25deg, -15deg);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!--move x-->
+    <div class="origin">
+        <div class="skewx">
+            <img src="imges/rose.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="skewy">
+            <img src="imges/rose.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="skewxy">
+            <img src="imges/rose.jpg">
+        </div>
+    </div>
+    
+    
+</body>
+</html>

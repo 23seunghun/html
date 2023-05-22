@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfrom 2-신승훈</title>
+
+    <style>
+        .origin {
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        .scalex:hover {
+            -webkit-transform: scaleX(1.2);
+            -ms-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+        }
+
+        .scaley:hover {
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+        .scalexy:hover {
+            -webkit-transform: scalexy(1.5);
+            -ms-transform: scalexy(1.5);
+            -moz-transform: scalexy(1.5);
+            -o-transform: scalexy(1.5);
+            transform: scalexy(1.5);
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!--move x-->
+    <div class="origin">
+        <div class="scalex">
+            <img src="imges/fruit.jpg">
+        </div>
+    </div>
+    <!--move xy-->
+    <div class="origin">
+        <div class="scaley">
+            <img src="imges/fruit.jpg">
+        </div>
+    </div>
+    <!--move xy-->
+    <div class="origin">
+        <div class="scalexy">
+            <img src="imges/fruit.jpg">
+        </div>
+    </div>
+</body>
+</html>
