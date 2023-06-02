@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에니메이션3-신승훈</title>
+    <style>
+      
+        #box1 {
+            height: 60px;
+            margin-top: 30px;
+            margin-left: 100px;
+            padding: 20px;
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-direction: normal; /*에니메이션 방향 지정 (원래있는곳으로 돌아감 normal)*/
+            animation-iteration-count: infinite; /*반복횟수 지정 (인피니티 무한반복*/
+        }
+
+        @keyframes moving {
+            from {
+                width: 200px;
+                background-color: rgb(236, 193, 216);
+                transform: scale(0.5) rotate(15deg); /*멀리서 커지는 효과 설정*/
+                opacity: 0.5; /*멀리서 부터 흐리게 보이게 하는 효과*/
+            }
+            to {
+                width: 400px;
+                background-color: deeppink;
+                transform: scale(1) rotate(0deg); /*기본으로 돌아가는 재설정*/
+            }
+        }
+
+        
+
+        
+    </style>
+
+</head>
+<body>
+    <div id="box1">
+        <h3>CSS3 Animation</h3>
+    </div>
+    
+</body>
+</html>
